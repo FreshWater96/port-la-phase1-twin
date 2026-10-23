@@ -1,0 +1,266 @@
+{
+  "title": "Port of Los Angeles Phase 1 geographic data register",
+  "snapshot_date": "2026-10-15",
+  "coordinate_reference": "GeoJSON coordinates are longitude, latitude in WGS 84 (EPSG:4326); the source files do not declare a legacy CRS object.",
+  "datasets": [
+    {
+      "id": "port-berths",
+      "file": "port-berths.geojson",
+      "feature_count": 263,
+      "distinct_berth_labels": 261,
+      "geometry": "MultiLineString / LineString",
+      "source": "City of Los Angeles Open Data; linework supplied by Port of Los Angeles",
+      "source_url": "https://data.lacity.org/A-Prosperous-City/Port-of-Los-Angeles-Berth-Lines/fkp8-e2db",
+      "source_last_updated": "2024-04-24",
+      "license": "City dataset terms; check dataset page for current terms",
+      "status": "port-supplied linework",
+      "limitations": [
+        "Berth lines are not terminal boundary polygons.",
+        "263 records contain 261 distinct berth labels; records are line features and should not be described as 263 unique berths.",
+        "Engineering drawing network-path metadata has been removed from the public export.",
+        "Terminal IDs are directory-range associations on existing berth lines, not terminal polygons; conflicting source ranges are explicitly withheld from automatic matching."
+      ],
+      "terminal_association_feature_count": 52,
+      "terminal_association_method": "Numeric label match against the shared, non-disputed ranges in the current Port directory/facility pages; disputed TraPac labels 134–135 are not attached."
+    },
+    {
+      "id": "terminal-footprints",
+      "file": "terminal-footprints.geojson",
+      "feature_count": 4,
+      "named_feature_count": 3,
+      "unnamed_feature_count": 1,
+      "geometry": "Polygon / MultiPolygon",
+      "source": "OpenStreetMap contributors",
+      "source_url": "https://www.openstreetmap.org/copyright",
+      "captured": "2026-10-14",
+      "license": "Open Database License (ODbL)",
+      "status": "community-mapped draft",
+      "limitations": [
+        "No footprint is Port-verified.",
+        "The Port directory lists seven major container terminals; the four community polygons are not a complete terminal inventory.",
+        "One polygon has no name attribute; do not infer its operator."
+      ]
+    },
+    {
+      "id": "roads",
+      "file": "roads.geojson",
+      "feature_count": 5112,
+      "geometry": "LineString",
+      "source": "OpenStreetMap contributors",
+      "source_url": "https://www.openstreetmap.org/copyright",
+      "captured": "2026-10-14",
+      "license": "Open Database License (ODbL)",
+      "status": "community-mapped"
+    },
+    {
+      "id": "railways",
+      "file": "railways.geojson",
+      "feature_count": 707,
+      "geometry": "LineString",
+      "source": "OpenStreetMap contributors",
+      "source_url": "https://www.openstreetmap.org/copyright",
+      "captured": "2026-10-14",
+      "license": "Open Database License (ODbL)",
+      "status": "community-mapped"
+    },
+    {
+      "id": "infrastructure",
+      "file": "infrastructure.geojson",
+      "feature_count": 629,
+      "geometry": "mixed line/polygon features",
+      "source": "OpenStreetMap contributors",
+      "source_url": "https://www.openstreetmap.org/copyright",
+      "captured": "2026-10-14",
+      "license": "Open Database License (ODbL)",
+      "status": "community-mapped"
+    },
+    {
+      "id": "city-street-centerlines",
+      "file": "city-street-centerlines.geojson",
+      "feature_count": 4516,
+      "geometry": "LineString",
+      "extent_wgs84": [
+        -118.34,
+        33.7,
+        -118.13,
+        33.82
+      ],
+      "source": "City of Los Angeles GeoHub; Bureau of Engineering, Mapping Division",
+      "source_url": "https://geohub.lacity.org/datasets/lahub::streets-centerline/about",
+      "source_service": "https://maps.lacity.org/lahub/rest/services/Street_Information/MapServer/36",
+      "catalog_item_last_modified": "2020-06-26",
+      "extract_date": "2026-10-15",
+      "status": "city public right-of-way centerline records",
+      "limitations": [
+        "Service attributes include raw status/section fields; their definitions are not normalized in this app.",
+        "A right-of-way centerline does not certify current public access, open status, or real-time route conditions.",
+        "The downloaded area is an extent-based subset; line features intersecting the extent can extend beyond its edge."
+      ]
+    },
+    {
+      "id": "city-overweight-container-corridor",
+      "file": "city-overweight-container-corridor.geojson",
+      "feature_count": 332,
+      "geometry": "LineString",
+      "source": "City of Los Angeles GeoHub; Bureau of Engineering",
+      "source_url": "https://geohub.lacity.org/datasets/overweight-container-corridor/about",
+      "source_service": "https://maps.lacity.org/lahub/rest/services/Street_Information/MapServer/17",
+      "extract_date": "2026-10-15",
+      "status": "City-designated port-serving truck corridor",
+      "limitations": [
+        "This designated overweight-container route is not the complete road network.",
+        "It is not a live route closure or permit advisory."
+      ]
+    },
+    {
+      "id": "container-terminal-registry",
+      "file": "container-terminal-registry.json",
+      "terminal_count": 7,
+      "matched_line_feature_count": 52,
+      "matched_unique_line_label_count": 52,
+      "boundary_verified_polygon_count": 0,
+      "source": "Port of Los Angeles container directory and individual terminal facility pages",
+      "source_url": "https://portoflosangeles.org/business/terminals/container",
+      "captured": "2026-10-15",
+      "status": "Port-listed terminal records with explicit number-range associations to existing Port-supplied berth-line geometry",
+      "limitations": [
+        "No Port-certified terminal polygon geometry integrated; all seven boundary statuses remain incomplete.",
+        "Two Port terminal pages have conflicting berth-number ranges; only their shared ranges are matched automatically.",
+        "A berth label matching a range does not establish an independently surveyed spatial relation or terminal boundary.",
+        "Facility attributes are as published on Port pages; the pages do not expose a uniform attribute update date."
+      ]
+    },
+    {
+      "id": "historical-ais-2024-07-15",
+      "file": "ais-history-2024-07-15.json",
+      "source": "NOAA Office for Coastal Management Marine Cadastre; U.S. Coast Guard Nationwide AIS",
+      "source_url": "https://ocmgeodatastor1.blob.core.windows.net/marinecadastre/ais2024/ais-2024-07-15.parquet",
+      "source_repository": "https://github.com/ocm-marinecadastre/ais-vessel-traffic",
+      "source_metadata_url": "https://github.com/ocm-marinecadastre/ais-vessel-traffic/blob/main/data/ais-broadcast-points-2024-readme.md",
+      "citation": "Martin, Daniel R., Jesse Brass, Matthew Dornback, and Jeremy Fontenault. 2025. Nationwide Automatic Identification System 2024. NOAA Office for Coastal Management.",
+      "license": "CC0 1.0 Universal (per NOAA readme)",
+      "status": "verified historical AIS sample; not live",
+      "period_utc": {
+        "start_inclusive": "2024-07-15T15:00:00Z",
+        "end_exclusive": "2024-07-15T21:00:00Z"
+      },
+      "coordinate_reference": "WGS 84 / EPSG:4326; output longitude, latitude",
+      "study_bbox_wgs84": [
+        -118.38,
+        33.66,
+        -118.12,
+        33.8
+      ],
+      "position_count": 31058,
+      "vessel_count": 244,
+      "output_bytes": 1729732,
+      "trajectory_gap_break_minutes": 10,
+      "duplicate_mmsi_timestamp_rows_retained": 7,
+      "fields": [
+        "MMSI",
+        "BaseDateTime (UTC)",
+        "longitude",
+        "latitude",
+        "SOG knots",
+        "COG degrees",
+        "heading degrees",
+        "vessel name",
+        "IMO",
+        "call sign",
+        "vessel type",
+        "status",
+        "length",
+        "width",
+        "draft",
+        "cargo",
+        "transceiver class"
+      ],
+      "limitations": [
+        "Study extent is a rectangular clip, not a Port-certified or legal harbor boundary.",
+        "AIS coverage and message reception are incomplete; a missing observation is not proof a vessel was absent.",
+        "No location is interpolated; trajectory lines are broken where timestamp gaps exceed 10 minutes.",
+        "The NOAA nationwide daily source is processed locally; only this clipped harbor/time sample is included in the frontend.",
+        "Vessel descriptive fields are the first available values within the selected window and may be missing."
+      ],
+      "sample_quality": {
+        "invalid_mmsi_rows": 0,
+        "invalid_sog_rows": 0,
+        "invalid_cog_rows": 0,
+        "invalid_heading_rows": 0,
+        "null_sog_rows": 93,
+        "null_cog_rows": 3844,
+        "null_heading_rows": 13608,
+        "timestamps_with_nonzero_seconds": 30328
+      },
+      "source_invalid_coordinate_rows": 0,
+      "source_missing_identifier_or_time_rows": 0,
+      "source_row_count": 9842280,
+      "timestamp_semantics": "BaseDateTime is the exact source timestamp in UTC seconds. NOAA describes the product as downsampled to the nearest whole minute; playback groups records into minute bins while point details preserve the exact source time."
+    },
+    {
+      "id": "port-container-throughput-2024",
+      "file": "container-throughput-2024.json",
+      "reporting_period": "Calendar year 2024 by month",
+      "reporting_unit": "TEUs (Twenty-Foot Equivalent Units)",
+      "source": "Port of Los Angeles official historical container statistics",
+      "source_url": "https://portoflosangeles.org/business/statistics/container-statistics/historical-teu-statistics-2024",
+      "retrieved_on": "2026-10-15",
+      "status": "official reported monthly values",
+      "limitations": [
+        "Monthly throughput is not synchronized to the six-hour AIS sample and is not an AIS-derived rate.",
+        "Values are copied from the official Port archive; no interpolation or imputation is performed."
+      ]
+    }
+  ],
+  "remote_services": [
+    {
+      "name": "USGS 3DEP elevation",
+      "url": "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer",
+      "status": "remote service; not locally archived",
+      "metadata_note": "App does not currently surface the selected source raster, acquisition date, resolution, vertical units, or vertical datum. Do not use for engineering/flood analysis until those are checked."
+    },
+    {
+      "name": "NOAA BAG bathymetry image service",
+      "url": "https://gis.ngdc.noaa.gov/arcgis/rest/services/bag_bathymetry/ImageServer",
+      "status": "remote service; not locally archived",
+      "metadata_note": "Visualization of available bathymetric survey products; not a guaranteed current navigational chart. Survey dates and vertical datum vary by source."
+    },
+    {
+      "name": "NOAA BAG survey coverage",
+      "url": "https://gis.ngdc.noaa.gov/arcgis/rest/services/web_mercator/nos_hydro_dynamic/MapServer/0",
+      "status": "remote service; not locally archived",
+      "metadata_note": "Survey coverage footprint is metadata about surveys, not a depth sounding."
+    }
+  ],
+  "validation_scope": "GeoJSON parse, feature counts, geometry-coordinate finiteness/ranges, and AOI overlap checks were performed for the bundled snapshots. These are data integrity checks, not a positional survey or Port certification.",
+  "terminal_directory_reference": {
+    "source": "Port of Los Angeles container terminal directory",
+    "url": "https://portoflosangeles.org/business/terminals/container",
+    "listed_major_container_terminals": 7,
+    "records_in_registry": 7,
+    "matched_line_feature_count": 52,
+    "matched_unique_line_label_count": 52,
+    "official_terminal_boundary_polygons_integrated": 0,
+    "use": "Facility/berth-range reference. Numeric-range matches are attached to existing Port-supplied berth lines; no terminal polygons are inferred."
+  },
+  "phase2_operations_analytics": {
+    "ais_source": "Existing local NOAA Marine Cadastre six-hour AIS bundle, 2024-07-15 15:00:00Z to 21:00:00Z",
+    "synchronization": "Dashboard minute selection, hourly bars, selected MMSI, vessel map highlights, and analytics use the same replay state.",
+    "activity_methods": [
+      "Observed-fix counts retain source rows including repeated MMSI/timestamp rows.",
+      "Distinct vessels are unique MMSIs in half-open UTC minute or hour bins.",
+      "Speed histogram uses non-null source SOG in knots with bins [0,2), [2,5), [5,10), [10,15), and [15,infinity)."
+    ],
+    "spatial_density": {
+      "method": "Count source AIS fixes per 0.005 degree WGS 84 cell in the selected UTC hour; selected MMSI filters the overlay.",
+      "interpretation": "Report density only; not unique-vessel density, berth occupancy, live activity, or a complete traffic census."
+    },
+    "terminal_proximity": {
+      "method": "Assign each source fix at most once to its nearest terminal-associated existing berth-line segment if local equirectangular point-to-segment distance is at most 100 m.",
+      "interpretation": "Observed vessel proximity only. It does not verify berthing, occupancy, arrival/departure, or terminal boundary.",
+      "boundary_status": "INCOMPLETE for all seven terminals."
+    },
+    "csv_export": "Calculated AIS time windows, speed bins, hourly activity, proximity counts, density grid cells, and official monthly TEUs; includes units, filters, methods, and source URLs.",
+    "live_data": "None. Historical AIS is labeled historical, not live."
+  }
+}

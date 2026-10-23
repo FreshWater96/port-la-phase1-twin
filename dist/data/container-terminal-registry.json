@@ -1,0 +1,337 @@
+{
+  "title": "Port of Los Angeles container terminal asset registry",
+  "schema_version": 1,
+  "snapshot_date": "2026-10-15",
+  "directory_source_url": "https://portoflosangeles.org/business/terminals/container",
+  "berth_geometry_source_url": "https://data.lacity.org/A-Prosperous-City/Port-of-Los-Angeles-Berth-Lines/fkp8-e2db",
+  "matching_method": "The leading numeric berth identifier in each existing Port-supplied berth-line label is compared with the berth-number ranges on the Port directory and facility pages. A line is attached only within the shared, non-disputed published range. This is a number-based association, not a terminal boundary or a spatial survey.",
+  "boundary_status": "INCOMPLETE for all seven records: no Port-certified terminal boundary polygon is included. Existing OSM footprints remain community-mapped drafts and are not assigned to these records.",
+  "terminals": [
+    {
+      "id": "apm-pacific",
+      "name": "APM Terminals Pacific",
+      "profile_name": "APM Terminals Pacific Container Terminal",
+      "operator": "APM Terminals Pacific LLC",
+      "directory_range": "401–406",
+      "directory_range_min": 401,
+      "directory_range_max": 406,
+      "profile_range": "401–406",
+      "match_range_min": 401,
+      "match_range_max": 406,
+      "address": "2500 Navy Way, Terminal Island, CA 90731",
+      "phone": "(310) 221-4100",
+      "facility_attributes": {
+        "cargo_mode": "Containerized cargo; import and export, grounded",
+        "site_area_acres": 484,
+        "published_berth_length_ft": 7300,
+        "published_physical_berths": 6,
+        "published_water_depth_ft": "55",
+        "container_cranes": 19,
+        "crane_type": "Post-Panamax",
+        "reefer_plugs": null,
+        "on_dock_rail": true,
+        "alternative_maritime_power": true,
+        "appointment_system": "TermPoint"
+      },
+      "facility_notes": [
+        "Pier 400",
+        "Dedicated green lanes for zero-emission trucks",
+        "Maintenance and repair"
+      ],
+      "profile_url": "https://portoflosangeles.org/business/terminals/container/apm-terminals-pacific",
+      "range_conflict": null,
+      "matched_line_feature_count": 6,
+      "matched_berth_labels": [
+        "B 401",
+        "B 402",
+        "B 403",
+        "B 404",
+        "B 405",
+        "B 406"
+      ],
+      "directory_range_numbers_without_line_label": []
+    },
+    {
+      "id": "everport",
+      "name": "Everport Terminal Services",
+      "profile_name": "Everport Container Terminal",
+      "operator": "Everport Terminal Services (ETS)",
+      "directory_range": "226–236",
+      "directory_range_min": 226,
+      "directory_range_max": 236,
+      "profile_range": "226–236",
+      "match_range_min": 226,
+      "match_range_max": 236,
+      "address": "389 Terminal Island Way, Terminal Island, CA 90731",
+      "phone": "(310) 221-0220",
+      "facility_attributes": {
+        "cargo_mode": "Containerized cargo; wheeled and grounded operation",
+        "site_area_acres": 205,
+        "published_berth_length_ft": 5800,
+        "published_physical_berths": 3,
+        "published_water_depth_ft": "47",
+        "container_cranes": 8,
+        "crane_type": "Post-Panamax",
+        "reefer_plugs": null,
+        "on_dock_rail": true,
+        "alternative_maritime_power": true,
+        "appointment_system": "eModal"
+      },
+      "facility_notes": [
+        "Maintenance and repair"
+      ],
+      "profile_url": "https://portoflosangeles.org/business/terminals/container/everport-terminal-services",
+      "range_conflict": null,
+      "matched_line_feature_count": 11,
+      "matched_berth_labels": [
+        "B 226",
+        "B 227",
+        "B 228",
+        "B 229",
+        "B 230",
+        "B 231",
+        "B 232",
+        "B 233",
+        "B 234",
+        "B 235",
+        "B 236"
+      ],
+      "directory_range_numbers_without_line_label": []
+    },
+    {
+      "id": "fenix-marine",
+      "name": "Fenix Marine Services",
+      "profile_name": "Fenix Marine Services Container Terminal",
+      "operator": "Fenix Marine Services (FMS)",
+      "directory_range": "302–305",
+      "directory_range_min": 302,
+      "directory_range_max": 305,
+      "profile_range": "302–305",
+      "match_range_min": 302,
+      "match_range_max": 305,
+      "address": "614 Terminal Way, Terminal Island, CA 90731",
+      "phone": "(310) 548-8815",
+      "facility_attributes": {
+        "cargo_mode": "Containerized cargo; import and export, grounded",
+        "site_area_acres": 292,
+        "published_berth_length_ft": 4000,
+        "published_physical_berths": 3,
+        "published_water_depth_ft": "50",
+        "container_cranes": 16,
+        "crane_type": "Post-Panamax",
+        "reefer_plugs": 706,
+        "on_dock_rail": true,
+        "alternative_maritime_power": true,
+        "appointment_system": "Voyage Control"
+      },
+      "facility_notes": [
+        "Maintenance and repair"
+      ],
+      "profile_url": "https://portoflosangeles.org/business/terminals/container/fenix-marine-services",
+      "range_conflict": null,
+      "matched_line_feature_count": 4,
+      "matched_berth_labels": [
+        "B 302",
+        "B 303",
+        "B 304",
+        "B 305"
+      ],
+      "directory_range_numbers_without_line_label": []
+    },
+    {
+      "id": "trapac",
+      "name": "TraPac",
+      "profile_name": "TraPac Container Terminal",
+      "operator": "TraPac, Inc.",
+      "directory_range": "136–147",
+      "directory_range_min": 136,
+      "directory_range_max": 147,
+      "profile_range": "134–147",
+      "match_range_min": 136,
+      "match_range_max": 147,
+      "address": "630 West Harry Bridges Blvd., Wilmington, CA 90744",
+      "phone": "(877) 387-2722; (310) 830-2000",
+      "facility_attributes": {
+        "cargo_mode": "Containerized cargo; wheeled and grounded operation",
+        "site_area_acres": 220,
+        "published_berth_length_ft": 4630,
+        "published_physical_berths": 4,
+        "published_water_depth_ft": "45–53",
+        "container_cranes": 10,
+        "crane_type": "Post-Panamax",
+        "reefer_plugs": 960,
+        "on_dock_rail": true,
+        "alternative_maritime_power": true,
+        "appointment_system": "eModal"
+      },
+      "facility_notes": [
+        "Two berths automated",
+        "Maintenance and repair"
+      ],
+      "profile_url": "https://portoflosangeles.org/business/terminals/container/trapac",
+      "range_conflict": "The Port directory and terminal page heading list 136–147; the detailed facility text lists 134–147. Only the shared 136–147 range is automatically associated. Existing B 134 and B 135 line features remain unassigned candidates.",
+      "matched_line_feature_count": 10,
+      "matched_berth_labels": [
+        "B 136",
+        "B 137",
+        "B 138",
+        "B 139",
+        "B 142",
+        "B 143",
+        "B 144",
+        "B 145",
+        "B 146",
+        "B 147"
+      ],
+      "directory_range_numbers_without_line_label": [
+        140,
+        141
+      ]
+    },
+    {
+      "id": "yusen",
+      "name": "Yusen Terminals",
+      "profile_name": "Yusen Container Terminal",
+      "operator": "Yusen Terminals LLC (YTI)",
+      "directory_range": "212–225",
+      "directory_range_min": 212,
+      "directory_range_max": 225,
+      "profile_range": "212–225",
+      "match_range_min": 212,
+      "match_range_max": 225,
+      "address": "701 New Dock St., Terminal Island, CA 90731",
+      "phone": "(310) 548-8000",
+      "facility_attributes": {
+        "cargo_mode": "Containerized cargo; import and export, grounded",
+        "site_area_acres": 232,
+        "published_berth_length_ft": 5800,
+        "published_physical_berths": 3,
+        "published_water_depth_ft": "47–53",
+        "container_cranes": 11,
+        "crane_type": "Post-Panamax, including 6 super Post-Panamax units",
+        "reefer_plugs": null,
+        "on_dock_rail": true,
+        "alternative_maritime_power": true,
+        "appointment_system": "Voyage Control"
+      },
+      "facility_notes": [
+        "Maintenance and repair"
+      ],
+      "profile_url": "https://portoflosangeles.org/business/terminals/container/yusen-terminals",
+      "range_conflict": null,
+      "matched_line_feature_count": 14,
+      "matched_berth_labels": [
+        "B 212",
+        "B 213",
+        "B 214",
+        "B 215",
+        "B 216",
+        "B 217",
+        "B 218",
+        "B 219",
+        "B 220",
+        "B 221",
+        "B 222",
+        "B 223",
+        "B 224",
+        "B 225"
+      ],
+      "directory_range_numbers_without_line_label": []
+    },
+    {
+      "id": "wbct-china-shipping",
+      "name": "WBCT – China Shipping (Holding) NA",
+      "profile_name": "China Shipping North America Container Terminal",
+      "operator": "China Shipping (North America) Holding Company Ltd. (WBCT)",
+      "directory_range": "100–103",
+      "directory_range_min": 100,
+      "directory_range_max": 103,
+      "profile_range": "100–102 in detailed facility text; page heading lists 100–103",
+      "match_range_min": 100,
+      "match_range_max": 102,
+      "address": "2050 John S. Gibson Blvd., San Pedro, CA 90731",
+      "phone": "(310) 519-2349",
+      "facility_attributes": {
+        "cargo_mode": "Containerized cargo; wheeled and grounded operation",
+        "site_area_acres": 132,
+        "published_berth_length_ft": 2500,
+        "published_physical_berths": 2,
+        "published_water_depth_ft": "53",
+        "container_cranes": 10,
+        "crane_type": "Post-Panamax",
+        "reefer_plugs": null,
+        "on_dock_rail": true,
+        "alternative_maritime_power": true,
+        "appointment_system": "Voyager Track"
+      },
+      "facility_notes": [
+        "On-dock rail facility",
+        "Dedicated green lanes for zero-emission trucks"
+      ],
+      "profile_url": "https://portoflosangeles.org/business/terminals/container/wbct-china-shipping",
+      "range_conflict": "The Port directory and terminal page heading list 100–103; the detailed facility text lists 100–102. Only the shared 100–102 range is automatically associated. No berth-line label numbered 103 appears in the supplied geometry.",
+      "matched_line_feature_count": 4,
+      "matched_berth_labels": [
+        "B 100",
+        "B S100",
+        "B S101",
+        "B 102"
+      ],
+      "directory_range_numbers_without_line_label": [
+        103
+      ]
+    },
+    {
+      "id": "wbct-la-til",
+      "name": "WBCT – LA TiL Terminal",
+      "profile_name": "WBCT – LA TiL Terminal",
+      "operator": "West Basin Container Terminal (WBCT) operates LA TiL Terminal LLC",
+      "directory_range": "121–127",
+      "directory_range_min": 121,
+      "directory_range_max": 127,
+      "profile_range": "121–127",
+      "match_range_min": 121,
+      "match_range_max": 127,
+      "address": "2050 John S. Gibson Blvd., San Pedro, CA 90731",
+      "phone": "(310) 519-2349",
+      "facility_attributes": {
+        "cargo_mode": "Containerized cargo; wheeled and grounded operation",
+        "site_area_acres": 186,
+        "published_berth_length_ft": 2500,
+        "published_physical_berths": 2,
+        "published_water_depth_ft": "45",
+        "container_cranes": 5,
+        "crane_type": "Post-Panamax",
+        "reefer_plugs": null,
+        "on_dock_rail": true,
+        "alternative_maritime_power": true,
+        "appointment_system": "Voyager Track"
+      },
+      "facility_notes": [
+        "Maintenance and repair",
+        "Gate camera link is available from the Port profile"
+      ],
+      "profile_url": "https://portoflosangeles.org/business/terminals/container/wbct-la-til",
+      "range_conflict": null,
+      "matched_line_feature_count": 3,
+      "matched_berth_labels": [
+        "B 121",
+        "B 126",
+        "B 127"
+      ],
+      "directory_range_numbers_without_line_label": [
+        122,
+        123,
+        124,
+        125
+      ]
+    }
+  ],
+  "matched_line_feature_count": 52,
+  "matched_unique_line_label_count": 52,
+  "disputed_berth_line_candidates": [
+    "B 134",
+    "B 135"
+  ],
+  "coverage_note": "A berth number inside an official range is a directory association, not a surveyed terminal boundary. Numbers in a range with no line label are reported as file coverage gaps only; their absence does not establish that physical berths or infrastructure are absent."
+}

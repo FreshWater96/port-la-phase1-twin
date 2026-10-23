@@ -1,0 +1,24 @@
+{
+  "title": "Port of Los Angeles monthly container statistics, calendar year 2024",
+  "source_name": "Port of Los Angeles",
+  "source_url": "https://portoflosangeles.org/business/statistics/container-statistics/historical-teu-statistics-2024",
+  "index_source_url": "https://portoflosangeles.org/business/statistics/container-statistics",
+  "retrieved_on": "2026-10-15",
+  "reporting_period": "Calendar year 2024",
+  "reporting_unit": "TEUs (Twenty-Foot Equivalent Units)",
+  "method": "Values copied from the Port's official monthly archive. No interpolation, resampling, or AIS-derived estimate.",
+  "monthly": [
+    {"month":"2024-01","loaded_imports_teu":441763.05,"loaded_exports_teu":126553.75,"total_teus":855652.30,"prior_year_change_pct":17.86},
+    {"month":"2024-02","loaded_imports_teu":408764.10,"loaded_exports_teu":132754.50,"total_teus":781434.10,"prior_year_change_pct":60.18},
+    {"month":"2024-03","loaded_imports_teu":379541.55,"loaded_exports_teu":144717.80,"total_teus":743417.05,"prior_year_change_pct":19.28},
+    {"month":"2024-04","loaded_imports_teu":416928.85,"loaded_exports_teu":133046.25,"total_teus":770337.10,"prior_year_change_pct":11.95},
+    {"month":"2024-05","loaded_imports_teu":390662.70,"loaded_exports_teu":125962.75,"total_teus":752893.30,"prior_year_change_pct":-3.37},
+    {"month":"2024-06","loaded_imports_teu":428752.80,"loaded_exports_teu":122515.00,"total_teus":827757.05,"prior_year_change_pct":-0.63},
+    {"month":"2024-07","loaded_imports_teu":501280.90,"loaded_exports_teu":114888.75,"total_teus":939600.35,"prior_year_change_pct":37.31},
+    {"month":"2024-08","loaded_imports_teu":509362.70,"loaded_exports_teu":121743.75,"total_teus":960597.05,"prior_year_change_pct":16.01},
+    {"month":"2024-09","loaded_imports_teu":497803.05,"loaded_exports_teu":114702.25,"total_teus":954706.40,"prior_year_change_pct":27.56},
+    {"month":"2024-10","loaded_imports_teu":462740.25,"loaded_exports_teu":122715.75,"total_teus":905025.75,"prior_year_change_pct":24.70},
+    {"month":"2024-11","loaded_imports_teu":458164.70,"loaded_exports_teu":124117.00,"total_teus":884315.05,"prior_year_change_pct":15.86},
+    {"month":"2024-12","loaded_imports_teu":460915.50,"loaded_exports_teu":110483.75,"total_teus":921616.75,"prior_year_change_pct":24.12}
+  ]
+}
